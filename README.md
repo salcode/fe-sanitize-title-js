@@ -18,4 +18,4 @@ spaces-dashes-and-other-chracter-are-removed
 
 ## Credits
 
-[Sal Ferrarello](https://salferrarello.com/] / [@salcode](https://twitter.com/salcode)
+[Sal Ferrarello](https://salferrarello.com/) / [@salcode](https://twitter.com/salcode)
