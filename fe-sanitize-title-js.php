@@ -36,6 +36,7 @@ function fe_sanitize_title_js_shortcode() {
 		'523 abc GHI!*&m5^&3#e@$/',
 		'Captain <strong>Awesome</strong>',
 		'Spaces, -Dashes-, and other ch@racter$ are %REMOVED%!',
+		'M.Brown/Beige',
 	);
 	$test_data = array();
 	foreach ( $test_strs as $test_str ) {
