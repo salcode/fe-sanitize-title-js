@@ -19,6 +19,8 @@ function wpFeSanitizeTitle( title ) {
 				// Strip any HTML tags.
 				title.replace( /<[^>]+>/ig, '' )
 			).toLowerCase()
+			// Replace any forward slashes (/) or periods (.) with a dash (-).
+			.replace(/[\/\.]/g, '-')
 			// Replace anything that is not a:
 				// word character
 				// space
