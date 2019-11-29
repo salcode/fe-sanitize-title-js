@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-11-29
+### Added
+- Added CHANGELOG.md
+### Fixed
+- Fixed error where period (.) and forward slash (/) were wrongly stripped, instead of encoded as dashes (-)
+
 ## [1.0.0] - 2017-09-07
 ### Added
 - Initial Release
