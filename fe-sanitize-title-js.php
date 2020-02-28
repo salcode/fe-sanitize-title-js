@@ -3,7 +3,7 @@
  * Plugin Name: Sanitize Title JavaScript Shortcode
  * Plugin URI: https://github.com/salcode/fe-sanitize-title-js
  * Description: Use the shortcode [sanitize-title-js] to display a code block that shows how to recreate the WordPress PHP function sanitize_title() in JavaScript.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Sal Ferrarello
  * GitHub Plugin URI: https://github.com/salcode/fe-sanitize-title-js
  * Author URI: http://salferrarello.com/
