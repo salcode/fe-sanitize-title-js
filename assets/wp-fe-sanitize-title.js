@@ -1,7 +1,7 @@
 /**
  * Original Source: https://salferrarello.com/wordpress-sanitize-title-javascript/
  *
- * Version: 1.0.2
+ * Version: 1.0.3
  *
  * JavaScript function to mimic the WordPress PHP function sanitize_title()
  * See https://codex.wordpress.org/Function_Reference/sanitize_title
