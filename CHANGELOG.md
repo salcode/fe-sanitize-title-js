@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 - Added .editorconfig for coding standard consistency. See #9
+- Added version number to wp-fe-sanitize-title.js
 ### Fixed
 - Fixed issue with en dashes and em dashes not being properly encoded. See #8
 
