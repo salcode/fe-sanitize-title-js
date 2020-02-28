@@ -38,7 +38,11 @@ function fe_sanitize_title_js_shortcode() {
 		'Spaces, -Dashes-, and other ch@racter$ are %REMOVED%!',
 		'M.Brown/Beige',
 		'This contains an en dash–here',
+		'This contains an en dash – here',
+		'This contains an en dash-– here with a keyboard dash',
 		'This contains an em dash—here',
+		'This contains an em dash — here',
+		'This contains an em dash-—-here surrounded by keyboard dashes.',
 	);
 	$test_data = array();
 	foreach ( $test_strs as $test_str ) {
