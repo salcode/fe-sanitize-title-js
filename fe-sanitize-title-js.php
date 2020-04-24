@@ -43,6 +43,7 @@ function fe_sanitize_title_js_shortcode() {
 		'This contains an em dash—here',
 		'This contains an em dash — here',
 		'This contains an em dash-—-here surrounded by keyboard dashes.',
+		'Non-breaking space', // This line contains a non-breaking space.
 	);
 	$test_data = array();
 	foreach ( $test_strs as $test_str ) {
