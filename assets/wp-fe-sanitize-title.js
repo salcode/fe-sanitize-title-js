@@ -17,10 +17,12 @@ function wpFeSanitizeTitle( title ) {
 
 	return removeSingleTrailingDash(
 		replaceSpacesWithDash(
-			removeAccents(
-				// Strip any HTML tags.
-				title.replace( /<[^>]+>/ig, '' )
-			).toLowerCase()
+			removeHTMLEntities(
+				removeAccents(
+					// Strip any HTML tags.
+					title.replace( /<[^>]+>/ig, '' )
+				).toLowerCase()
+			)
 			// Replace any forward slashes (/) or periods (.) with a dash (-).
 			.replace(/[\/\.]/g, '-')
 			// Replace anything that is not a:
@@ -31,6 +33,21 @@ function wpFeSanitizeTitle( title ) {
 			.replace(/[^\w\s-]+/g, '')
 		)
 	);
+
+	/**
+	 * Replace all HTML Entities.
+	 *
+	 * The string to remove (replace with '')
+	 * - start with an ampersand &
+	 * - has 0 or more characters (non-greedy) .*?
+	 * - ends in a semi-color ;
+	 *
+	 * @param str String that may contain HTML entities.
+	 * @return String with HTML entities removed.
+	 */
+	function removeHTMLEntities( str ) {
+		return str.replace(/&.*?;/g, '');
+	}
 
 	/**
 	 * Replace one or more blank spaces (or repeated dashes) with a single dash.
