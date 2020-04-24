@@ -22,6 +22,8 @@ function wpFeSanitizeTitle( title ) {
 					// Strip any HTML tags.
 					title.replace( /<[^>]+>/ig, '' )
 				).toLowerCase()
+				// Replace &nbsp;, &ndash;, and &mdash with a dash (-).
+				.replace(/&(?:(?:nbsp)|(?:ndash)|(?:mdash));/g, '-')
 			)
 			// Replace any forward slashes (/) or periods (.) with a dash (-).
 			.replace(/[\/\.]/g, '-')
