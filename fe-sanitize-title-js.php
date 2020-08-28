@@ -46,6 +46,11 @@ function fe_sanitize_title_js_shortcode() {
 		'Non-breaking space', // This line contains a non-breaking space.
 		'HTML&nbsp;Entity&nbsp;Non-Breaking&nbsp;Space',
 		'one&ndash;two&mdash;three&times;four&iexcl;five&reg;',
+		'One this is an emoji 😀',
+		'Two this is an emoji 🌮',
+		'Three this is an emoji 🎼',
+		'Four this is an emoji 🏖',
+		'Five this is an emoji 📫',
 	);
 	$test_data = array();
 	foreach ( $test_strs as $test_str ) {
